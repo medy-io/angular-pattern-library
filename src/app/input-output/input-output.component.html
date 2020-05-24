@@ -1,0 +1,7 @@
+<h2 data-testid="master">{{master}}</h2>
+<h2>Hearos lenght: {{heroes.length}}</h2>
+    <app-input-output-child *ngFor="let hero of heroes"
+      [hero]="hero"
+      [master]="master"
+      (newItemEvent)="logEvent($event)">
+    </app-input-output-child>
